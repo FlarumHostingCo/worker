@@ -45,7 +45,7 @@ import terminalsize
 log = logging.getLogger(__name__)
 
 TIMESTAMP = '\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000'
-_loginJitterAmplitude = 30
+
 
 # Apply a location jitter
 def jitterLocation(location=None, maxMeters=10):

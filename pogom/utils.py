@@ -54,14 +54,13 @@ def get_args():
                         help='Usernames, one per account.')
     parser.add_argument('-p', '--password', action='append',
                         help='Passwords, either single one for all accounts or one per account.')
-    parser.add_argument('--acc-reserve', type=float, default=2, help='The number (or percent) of accounts \
+    parser.add_argument('--acc-reserve', type=float, default=4, help='The number (or percent) of accounts \
                         to keep in reserve. Reserved accounts are regularily rotated in to reduce \
                         account stress. Defaults to 0 (off)')
     parser.add_argument('-l', '--location', type=parse_unicode,
                         help='Location, can be an address or coordinates')
     parser.add_argument('-j', '--jitter', help='Apply random -9m to +9m jitter to location',
                         action='store_true', default=True)
-    parser.add_argument('-lj', '--loginjitter', help='Apply random jitter between 0 and selected value to login location (in meters), default = 30', type=int, default=30)
     parser.add_argument('-st', '--step-limit', help='Steps', type=int,
                         default=12)
     parser.add_argument('-ed', '--encounter-delay',
