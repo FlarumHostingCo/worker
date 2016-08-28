@@ -644,7 +644,7 @@ def check_login(args, account, api, position):
 
     # Try to login (a few times, but don't get stuck here)
     i = 0
-    api.set_position(position[0], position[1], position[2]
+    api.set_position(position[0], position[1], position[2])
     while i < args.login_retries:
         try:
             if args.proxy:
